@@ -13,15 +13,17 @@ body {
 .container {
     display: flex;
     flex-direction: column;
+    align-items: flex-end;
     width: 50%;
 }
 
 .container-img {
-    position: relative;
-    /* CLAVE para que absolute funcione bien */
     width: 50%;
-    /* o el tamaño que uses */
-    height: auto;
+    position: relative;
+}
+
+.container-img img {
+    position: absolute;
 }
 
 .border {
@@ -32,6 +34,7 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin-top: 40px;
 }
 
 .icon-button {
@@ -39,25 +42,73 @@ body {
     height: 70px;
 }
 
-.stroke-pequeño {
-    position: absolute;
-    top: 80px;
-    /* ajusta según necesidad */
-    left: 30%;
-    transform: translateX(-50%);
-    width: 310px;
-    height: 476px;
-    z-index: 1;
-}
-
-/* Imagen principal encima */
 .imagen {
-    position: absolute;
-    width: 480px;
-    height: 628px;
+    left: 250px;
+    top: 200px;
     z-index: 2;
 }
 
+.stroke-grande {
+    top: 150px;
+    left: 200px;
+    z-index: 1;
+}
+
 .starg {
-    
+    top: 83px;
+    left: 133px;
+    z-index: 2;
+}
+
+.stroke-pequeño {
+    z-index: 1;
+    top: 400px;
+    left: 470px;
+}
+
+.star{
+    z-index: 3;
+    top: 250px;
+    left: 280px;
+    width: 90px;
+    height: 100px;
+}
+
+.star-dos {
+    z-index: 3;
+    left: 630px;
+    top: 665px;
+    width: 100px;
+    height: 100px;
+}
+
+.tag-uno {
+    left: 510px;
+    top: 250px;
+    z-index: 3;
+}
+
+.tag-dos{
+    top: 730px;
+    left: 155px;
+    z-index: 3;
+    padding: 5px 0;
+}
+
+.logo{
+    width: 70%;
+    margin-top: 60px;
+    margin-bottom: 50px;
+}
+
+.h1{
+    margin-bottom: 40px;
+}
+
+.p{
+    margin-bottom: 40px;
+}
+
+.button-1{
+    margin-left: 22px;
 }

@@ -1,0 +1,41 @@
+*{
+    background-color: #AB2706;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+}
+
+.imagenes {
+    width:60%;
+    position: relative;
+}
+
+.imagenes img{
+    position: absolute;
+}
+
+.model {
+    bottom: top 0%;
+    z-index: 3;
+    background-color: transparent;
+    width: 618px;
+}
+
+.points {
+    left: 430px;
+    top: 500px;
+    z-index: 2;
+    background-color: transparent;
+    width: 224px;
+}
+
+.points-two{
+    
+}
+
+.parrafos {
+    width: 40%;
+}
+
