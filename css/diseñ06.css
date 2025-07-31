@@ -1,4 +1,4 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -9,14 +9,19 @@ body {
     flex-direction: row;
     justify-content: center;
 }
+
 .container {
     display: flex;
     flex-direction: column;
     width: 50%;
 }
 
-.container-img{
+.container-img {
+    position: relative;
+    /* CLAVE para que absolute funcione bien */
     width: 50%;
+    /* o el tamaño que uses */
+    height: auto;
 }
 
 .border {
@@ -32,4 +37,27 @@ body {
 .icon-button {
     width: 91px;
     height: 70px;
+}
+
+.stroke-pequeño {
+    position: absolute;
+    top: 80px;
+    /* ajusta según necesidad */
+    left: 30%;
+    transform: translateX(-50%);
+    width: 310px;
+    height: 476px;
+    z-index: 1;
+}
+
+/* Imagen principal encima */
+.imagen {
+    position: absolute;
+    width: 480px;
+    height: 628px;
+    z-index: 2;
+}
+
+.starg {
+    
 }
